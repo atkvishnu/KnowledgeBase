@@ -1,0 +1,20 @@
+# txt files
+**/*.txt
+**/*.exe
+**/*.bat
+**/*.class
+.obsidian/
+.vscode/
+Excalidraw/
+Competetive_Programming/
+CSS reset/
+Interviews/
+Java/
+JavaScript_JS/
+Language Features/
+**/node_modules/
+**/**/package-lock.json
+
+Interview_Toil/Books Library
+Interview_Toil/CURRENTLY READING
+Interview_Toil/Python

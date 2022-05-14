@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+Element	1_sparse_matrix.cpp	/^struct Element$/;"	s	file:
+Sparse	1_sparse_matrix.cpp	/^struct Sparse$/;"	s	file:
+add	1_sparse_matrix.cpp	/^struct Sparse * add(struct Sparse *s1,struct Sparse *s2)$/;"	f	typeref:struct:Sparse *
+create	1_sparse_matrix.cpp	/^void create(struct Sparse *s)       \/\/ call by reference : because it has to modify the values$/;"	f	typeref:typename:void
+display	1_sparse_matrix.cpp	/^void display(struct Sparse s)$/;"	f	typeref:typename:void
+ele	1_sparse_matrix.cpp	/^    struct Element *ele;    \/\/ struct of non-zero elements$/;"	m	struct:Sparse	typeref:struct:Element *	file:
+i	1_sparse_matrix.cpp	/^    int i;  \/\/ row number$/;"	m	struct:Element	typeref:typename:int	file:
+j	1_sparse_matrix.cpp	/^    int j;  \/\/ column number$/;"	m	struct:Element	typeref:typename:int	file:
+m	1_sparse_matrix.cpp	/^    int m;      \/\/ number of rows$/;"	m	struct:Sparse	typeref:typename:int	file:
+main	1_sparse_matrix.cpp	/^int main()$/;"	f	typeref:typename:int
+n	1_sparse_matrix.cpp	/^    int n;      \/\/ number of cols$/;"	m	struct:Sparse	typeref:typename:int	file:
+num	1_sparse_matrix.cpp	/^    int num;    \/\/ number of non-zero elements$/;"	m	struct:Sparse	typeref:typename:int	file:
+x	1_sparse_matrix.cpp	/^    int x;  \/\/ non zero element$/;"	m	struct:Element	typeref:typename:int	file:
