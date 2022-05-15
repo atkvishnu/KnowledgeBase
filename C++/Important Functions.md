@@ -1,14 +1,16 @@
 # Ceil and Floor functions in C++
+
 In mathematics and computer science, the floor and ceiling functions map a real number to the greatest preceding or the least succeeding integer, respectively.
 
 **floor(x) :** Returns the largest integer that is smaller than or equal to x (i.e : rounds downs the nearest integer).
 
 ```
 // Here x is the floating point value.
-// Returns the largest integer smaller 
-// than or equal to x 
+// Returns the largest integer smaller
+// than or equal to x
 double floor(double x)
 ```
+
 Examples of Floor:
 
 Input : 2.5
@@ -38,6 +40,7 @@ int main()
 }
 
 ```
+
 Output:
 Floor is : 2
 Floor is : -3
@@ -46,11 +49,12 @@ Floor is : -3
 
 ```
 // Here x is the floating point value.
-// Returns the smallest integer greater than or equal to x 
-double ceiling(double x)  
+// Returns the smallest integer greater than or equal to x
+double ceiling(double x)
 ```
 
 Examples of Ceil:
+
 ```
 Input : 2.5
 Output : 3
@@ -80,25 +84,28 @@ int main()
 }
 
 ```
+
 Output:
 Ceil is : 3
 Ceil is : -2
 
-----
-----
-----
+---
+
+---
+
+---
+
 # Finding Floor and Ceil of a Sorted Array using C++ STL
 
 Given a sorted array, the task is to find the [floor and ceil](https://www.geeksforgeeks.org/ceil-floor-functions-cpp/) of given numbers using STL.
 
 **Examples:**   
 **Input:** arr[] = {1, 2, 4, 7, 11, 12, 23, 30, 32},
-       values[] = { 1, 3, 5, 7, 20, 24 }
-**Output:** Floor Values: 1 2 4 7 12 23 
-       Ceil values: 1 4 7 7 23 30 
+values[] = { 1, 3, 5, 7, 20, 24 }
+**Output:** Floor Values: 1 2 4 7 12 23
+Ceil values: 1 4 7 7 23 30
 
-
-**In case of floor()**: [lower_bound()](https://www.geeksforgeeks.org/lower_bound-in-cpp/) method os STL will be used to find the lower bound. This returns an iterator pointing to the first element in the range [first,last) which does not compare less than the target.  
+**In case of floor()**: [lower_bound()](https://www.geeksforgeeks.org/lower_bound-in-cpp/) method os STL will be used to find the lower bound. This returns an iterator pointing to the first element in the range [first,last) which does not compare less than the target.
 
 **In case of ceil()**: [upper_bound()](https://www.geeksforgeeks.org/stdupper_bound-in-cpp/) method os STL will be used to find the upper bound. This method returns an iterator pointing to the first element in the range [first,last) which compares greater than a target.  
 **Implementation:**
@@ -110,8 +117,7 @@ Given a sorted array, the task is to find the [floor and ceil](https://www.geeks
 #include <bits/stdc++.h>
 using namespace std;
 
-// Function to find floor of list of
-// values using lower_bound in STL
+// Function to find floor of list of values using lower_bound in STL
 void printFloor(int arr[], int n1,
 				int findFloor[], int n2)
 {
@@ -121,9 +127,7 @@ void printFloor(int arr[], int n1,
 	cout << "Floor : ";
 	for (int i = 0; i < n2; i++) {
 
-		low = (lower_bound(arr, arr + n1,
-						findFloor[i])
-			- arr);
+		low = (lower_bound(arr, arr + n1,findFloor[i])- arr);
 
 		if (arr[low] > findFloor[i])
 			cout << arr[low - 1] << " ";
@@ -133,9 +137,8 @@ void printFloor(int arr[], int n1,
 
 	cout << endl;
 }
-ceil
-// Function to find Ceil of list of
-// values using upper_bound in STL
+
+// ceil Function to find Ceil of list of values using upper_bound in STL
 void printCeil(int arr[], int n1, int findCeil[], int n2)
 {
 	// Find and print the Ceil Values
@@ -188,22 +191,16 @@ int main()
 }
 ```
 
-
-----
-----
-----
+---
 
 # Precision of floating point numbers in C++ (floor(), ceil(), trunc(), round() and setprecision())
-
 
 Decimal equivalent of 1/3 is 0.33333333333333…. An infinite length number would require infinite memory to store, and we typically have 4 or 8 bytes. Therefore, Floating point numbers store only a certain number of significant digits, and the rest are lost. The **precision** of a floating point number defines how many significant digits it can represent without information loss. When outputting floating point numbers, cout has a default precision of 6 and it truncates anything after that.
 
 Given below are few libraries and methods which are used to provide precision to floating point numbers in C++:
 
-
 1. **floor():**
 
-  
 Floor rounds off the given value to the closest integer which is less than the given value.
 
 ```cpp
@@ -227,6 +224,7 @@ int main()
 }
 
 ```
+
 Output:
 1
 1
@@ -235,12 +233,9 @@ Output:
 -2
 -2
 
-
 2. **ceil():**
 
-  
 Ceil rounds off the given value to the closest integer which is more than the given value.
-
 
 ```cpp
 // C++ program to demonstrate working of ceil() in C/C++
@@ -262,6 +257,7 @@ int main()
 }
 
 ```
+
 Output:
 
 2
@@ -271,9 +267,8 @@ Output:
 -1
 -1
 
-3. **trunc():** 
+3. **trunc():**
 
-  
 Trunc rounds removes digits after decimal point.
 
 ```cpp
@@ -297,6 +292,7 @@ int main()
 }
 
 ```
+
 Output:
 
 1
@@ -306,12 +302,9 @@ Output:
 -1
 -1
 
+4. **round():**
 
-4. **round():** 
-
-  
 Rounds given number to the closest integer.
-
 
 ```cpp
 // C++ program to demonstrate working of round()
@@ -345,10 +338,8 @@ Output:
 -2
 -2
 
+5. **setprecision():**
 
-5. **setprecision():** 
-
-  
 Setprecision when used along with ‘fixed’ provides precision to floating point numbers correct to decimal numbers mentioned in the brackets of the setprecison.
 
 ```cpp
@@ -370,6 +361,7 @@ int main()
 }
 
 ```
+
 Output:
 
 3 -3
@@ -380,24 +372,26 @@ Output:
 3.14159 -3.14159
 3.141590 -3.141590
 
-
-
-
 **Note:** When the value mentioned in the setprecision() exceeds the number of floating point digits in the original number then 0 is appended to floating point digit to match the precision mentioned by the user.
 
 There exists other methods too to provide precision to floating point numbers. The above mentioned are few of the most commonly used methods to provide precision to floating point numbers during competitive coding.
 
-----------------
--------
---------
+---
+
+---
+
+---
 
 # Const member functions in C++
+
 Like member functions and member function arguments, the objects of a class can also be declared as **const**. an object declared as const cannot be modified and hence, can invoke only const member functions as these functions ensure not to modify the object.   
 A const object can be created by prefixing the const keyword to the object declaration. Any attempt to change the data member of const objects results in a compile-time error.   
-**Syntax:** 
+**Syntax:**
+
 ```
-const Class_Name Object_name; 
+const Class_Name Object_name;
 ```
+
 -   When a function is declared as const, it can be called on any type of object, const object as well as non-const objects.
 -   Whenever an object is declared as const, it needs to be initialized at the time of declaration. however, the object initialization while declaring is possible only with the help of constructors.
 
@@ -426,8 +420,7 @@ int main()
 
 ```
 
-
-**Output:** 
+**Output:**
 
 20
 
@@ -453,9 +446,9 @@ int main() {
 
 ```
 
-**Output:** 
+**Output:**
 
- passing 'const Test' as 'this' argument of 'int 
+passing 'const Test' as 'this' argument of 'int
 Test::getValue()' discards qualifiers
 
 Let’s look at another example:
@@ -495,9 +488,11 @@ int main()
 
 **OUTPUT :** Hello world I'm Rancho Baba Inside display() Function
 
-----
-----
-----
+---
+
+---
+
+---
 
 # std::unique in C++
 
@@ -508,18 +503,19 @@ int main()
 
 **It can be used in two ways as shown below:**
 
-1. **Comparing elements using ==:**  
+1. **Comparing elements using ==:**
 
 Syntax:
+
 ```
-**template 
+**template
 ForwardIterator unique (ForwardIterator first, ForwardIterator last);**
 
 **first:** Forward iterator to the first element in the container.
 **last:** forward iterator to the last element in the container.
 
-**Return Value:** It returns an iterator to the element that follows 
-the last element not removed. The range between first and this iterator includes 
+**Return Value:** It returns an iterator to the element that follows
+the last element not removed. The range between first and this iterator includes
 all the elements in the sequence that were not
 duplicates and hence not removed.
 ```
@@ -552,22 +548,23 @@ int main()
 	return 0;
 }
 ```
+
 Output:
 1 3 10 1 3 7 8
 
 Here, in this vector, all the sub-groups having consecutive duplicate elements has been reduced to only one element. Note that it doesnot matter whether the same element is present later on as well, only duplicate elements present consecutively are handled by this function.
 
-
 2. **By comparing using a pre-defined function:**  
-Syntax:
+   Syntax:
+
 ```
-template 
+template
 	ForwardIterator unique (ForwardIterator first, ForwardIterator last,
                          BinaryPredicate Pred);
 
 Here, first and last are the same as previous case.
 
-**Pred:** Binary function that accepts two elements in the range as argument, and returns a value convertible to bool. 
+**Pred:** Binary function that accepts two elements in the range as argument, and returns a value convertible to bool.
 The value returned indicates whether both arguments are considered equivalent
 (if true, they are equivalent and one of them is removed).
 The function shall not modify any of its arguments.
@@ -612,14 +609,12 @@ Output:
 
 You arre vvvisiting GFG
 
-
 1.  Here, we have manipulated the binary function in such a way that only if two G are passed as arguments, then only they will be considered as same, and if any other character is present consecutively, then it will remain unaffected, and will not be removed (like r in arre, v in visiting).
-    
 
 #### **Where str::unique can be used ?**
 
 1.  **Remove all the duplicate elements from a container:** Many of you must have searched for std::unique with a view that it will remove all the duplicate elements from the container, and now you might feel a bit disappointed to know that it removes only the consecutive duplicate elements. But, although, **std::unique** cannot do so as per its definition, but applying a bit of logic, we can make that happen. What we need to do is just sort the array before applying std::unique, such that all equal elements become consecutive, and now we have std::unique to remove all the duplicate consecutive elements.
-    
+
     So, std::unique can also be used to **remove all the duplicate elements from a container.**
 
 ```cpp
@@ -654,12 +649,14 @@ int main()
 	return 0;
 }
 ```
+
 Output:
 1 2 3 7 8 10
-    
+
 **Explanation:** Firstly, we sorted the array such that all the equal duplicate elements become consecutive and now applying std::unique to it such that the duplicacy is removed, and in this way we remove all the duplicate elements from a container, whether consecutive or not.
-    
+
 2.  **Count unique elements :** It can also be used if we want to count the total no. of unique elements in a container.
+
 ```cpp
 // C++ program to demonstrate the use of std::unique
 #include <iostream>
@@ -695,35 +692,7 @@ Total no. of unique elements = 5
 **Explanation:** As we know that std::unique returns an iterator to what should be the new end of the container after removing duplicate elements, so just counting the total no. of elements from beginning till this new end with the help of std::distance, should give us the total no. of unique elements in the container.
 
 ---
+
 ---
+
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
