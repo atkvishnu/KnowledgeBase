@@ -3,9 +3,13 @@
 **/*.exe
 **/*.bat
 **/*.class
+**/*.png
 
 **/node_modules/
 **/**/package-lock.json
+
+**/*.ipynb_checkpoints
+
 
 .obsidian/
 .vscode/
@@ -16,4 +20,7 @@ notes/CSS reset/
 notes/JavaScript_JS/devTools/
 notes/JavaScript_JS/javaScript30/
 
-Interview_Toil/Python
+
+Interview_Toil/Python/python books/
+
+
