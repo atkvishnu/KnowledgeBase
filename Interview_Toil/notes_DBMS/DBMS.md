@@ -1,4 +1,3 @@
-
 ---
 
 1. What is DBMS ? Mention advantages.. 
@@ -24,6 +23,8 @@ A database is an organised collection of structured information, or data, typica
 ---
 
 1. What is a database system? 
+
+Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just a database.
 
 ---
 
