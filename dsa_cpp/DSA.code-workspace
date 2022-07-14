@@ -1,0 +1,28 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "ostream": "cpp",
+            "iostream": "cpp",
+            "new": "cpp",
+            "string_view": "cpp",
+            "*.tcc": "cpp",
+            "bitset": "cpp",
+            "rope": "cpp",
+            "fstream": "cpp",
+            "sstream": "cpp",
+            "valarray": "cpp",
+            "array": "cpp",
+            "initializer_list": "cpp",
+            "ranges": "cpp",
+            "span": "cpp",
+            "regex": "cpp",
+            "utility": "cpp"
+        },
+        "git.ignoreLimitWarning": true
+    }
+}

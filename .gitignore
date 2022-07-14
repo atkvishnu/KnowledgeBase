@@ -1,0 +1,31 @@
+# txt files
+**/*.txt
+**/*.exe
+**/*.bat
+**/*.class
+**/*.png
+
+**/node_modules/
+**/**/package-lock.json
+
+**/*.ipynb_checkpoints
+
+.obsidian/
+.vscode/
+
+notes/excalidraw/
+notes/css_reset/
+notes/javaScript/devTools/
+notes/javaScript/javaScript30/
+notes/rust/codes
+
+Interview_Toil/Python/python books/
+Interview_Toil/Python/Python-for-Algorithm-and-Interviews-master/
+
+
+# Generated files
+**/target/
+
+# The library shouldn't decide about the exact versions of 
+# its dependencies, but let the downstream crate decide.
+**/Cargo.lock
