@@ -154,19 +154,13 @@ int32_t main()
     string str;
     cin >> n >> t;
     cin >> str;
-    
-    while(t) {
-		cout << t << endl;
-
-    	for (int i = 0; i < str.length(); ++i) {
-
+    while(t--) {
+    	for (int i = 0; i < n; ++i) {
     		if(str[i] == 'B' && str[i+1] == 'G') {
     			swap(str[i], str[i+1]);
                 i++;
     		}
     	}
-
-    	t--;
     }
     cout << str << endl;
     

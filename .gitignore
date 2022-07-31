@@ -5,19 +5,23 @@
 **/*.class
 **/*.png
 
+.obsidian/
+.vscode/
+
 **/node_modules/
 **/**/package-lock.json
 
 **/*.ipynb_checkpoints
-
-.obsidian/
-.vscode/
 
 notes/excalidraw/
 notes/css_reset/
 notes/javaScript/devTools/
 notes/javaScript/javaScript30/
 notes/rust/codes
+notes/wall.md
+notes/interviews
+
+
 
 Interview_Toil/Python/python books/
 Interview_Toil/Python/Python-for-Algorithm-and-Interviews-master/

@@ -174,6 +174,7 @@ int32_t main()
         cin >> n;
         string str;
         cin >> str;
+
         stack<char> stk;
 
         map<char, int> mp;
@@ -186,8 +187,6 @@ int32_t main()
         mp.insert({'/', 2});
         mp.insert({'^', 3});
 
-        // cout << mp << endl;
-
         string ans = "";
 
         for(auto x:str) {
@@ -195,21 +194,34 @@ int32_t main()
                 stk.push(x);
             }
             else if(x == ')') {
-
+                while(stk.top() != '(' && !stk.empty()) {
+                    ans += stk.top();
+                    stk.pop();
+                }
+                if(!stk.empty()) {
+                    stk.pop();
+                }
             }
             else if (x == '+' || x == '-' || x == '*' || x == '/' || x == '^') {
-                while(!stk.empty() && m[x] <= m[stk.top()]) {
-                    
+                while(!stk.empty() && mp[x] <= mp[stk.top()]) {
+                    ans += stk.top();
+                    stk.pop();
                 }
+                stk.push(x);
+            }
+            else {
+                ans += x;
             }
         }
 
+        while(!stk.empty()) {
+            ans += stk.top();
+            stk.pop();
+        }
 
+        cout << ans << endl;
 
-
-
-
-
-        return 0;
     }
+
+    return 0;
 }
