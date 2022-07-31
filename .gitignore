@@ -3,7 +3,6 @@
 **/*.exe
 **/*.bat
 **/*.class
-**/*.png
 
 .obsidian/
 .vscode/
