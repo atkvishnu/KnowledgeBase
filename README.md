@@ -1,3 +1,3 @@
-# Notes / Brain 2.0
+# Notes
 
 ![](static/notebook.png)
