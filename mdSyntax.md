@@ -29,6 +29,8 @@ Escaping Backticks :
 
 ~~Mistaken text.~~	
 
+~~strike~~
+
 *Italics*	
 
 **Bold**			__BOLD__dd
@@ -43,6 +45,28 @@ Tasks
 - [ ] normal **formatting**
 - [ ] incomplete
 - [x] completed
+
+- [x] point 1
+
+- hi
+- hi
+- hi
+	+ hi
+		+ hi
+			+ hi
+
+- hi
++ hi
+* hi
+
+```js
+var now = new Date();
+
+var days = new Array('Sunday','Monday','Tuesday')
+```
+
+
+
 
 ---
 
@@ -176,6 +200,14 @@ Table
 | col 2 is      | centered        |   $12 |
 | zebra stripes | are neat        |    $1 |
 
+| point 1 | point 2 |
+| ------- | ------- |
+| a       | b       |
+| v       | d       |
+| e       | f       |
+|         |         |
+
+[New link](google.com)
 
 
 
