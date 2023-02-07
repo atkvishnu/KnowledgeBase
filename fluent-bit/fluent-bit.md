@@ -75,7 +75,7 @@ https://docs.logiq.ai/integrations/fluent-bit/fluent-bit-installation-on-ubuntu
 [OUTPUT]
     Name          http
     Match         *
-    Host          lq5955.logiq.ai
+    Host          <HOSTPATH>
     Port          514
     URI           /v1/json_batch
     Format        json
@@ -83,5 +83,4 @@ https://docs.logiq.ai/integrations/fluent-bit/fluent-bit-installation-on-ubuntu
     tls.verify    off
     net.keepalive off
     compress      gzip
-    Header Authorization Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOltdLCJhdWQiOiJsb2dpcS1jbGllbnRzIiwianRpIjoiOWNmYzMzYzEtNWI5MC00ZGQ2LWE4ZmMtMDYxZjVjZmZlMDQxIiwiaWF0IjoxNjY3OTgxOTI3LCJpc3MiOiJsb2dpcS1jb2ZmZWUtc2VydmVyIiwibmJmIjoxNjY3OTgxOTI3LCJzdWIiOiJmbGFzaC1hZG1pbkBmb28uY29tIiwiVWlkIjoyLCJyb2xlIjoiYWRtaW4ifQ.RYa32OrVYzBC1jeIYWv_sRsPwkEZDnKw3HUzdNoLzYWZHk_usrhT-IatIpn-85LBxukkrx30lpvATLdMJ-xngnSFsNYrHQgophRfzmeZYZIuQ_NaZzb0IasJofdaMvcJ99Uv-L0GRRfzDIc7RYSLj8ktuEPnBYyfscgUJ411tTuHxVNjjw0e10oH268LuAfl_FN6XpMloWEbgDI6jOlKbbQkZP9nK3nLhPsDsF-Z8P5Q0R47xfzXBxxmvJLlZDGS8OyzBqv__xYFr2ODXpE2oWgxFqTz1EYo16DtArE4HqjjGXAyvYqBZwd_SjM1CRZ2t_qY09lc8khsD_IgsPDxxw
-```
+    Header Authorization Bearer <KEY>

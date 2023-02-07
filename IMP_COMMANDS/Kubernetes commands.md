@@ -38,7 +38,7 @@ Usage:
 - `kubectl config get-clusters`
 - `kubectl config get-contexts`
 - `kubectl config rename-context <old-context-name> <new-context-name>`
-- `kubectl config get-context logiq-dev`
+- `kubectl config get-context <NAMESPACE>`
 - `kubectl get ns`
 - `kubectl config set-context <context-name> --namespace <namespace-name>`
 - `kubectl get ingress`
