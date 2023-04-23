@@ -1,6 +1,0 @@
-- https://ebpf.io/
-- https://newrelic.com/platform/kubernetes-pixie
-- https://newrelic.com/blog/best-practices/what-is-ebpf
-- https://docs.pixielabs.ai/tutorials/pixie-101/profiler/
-- https://github.com/iovisor/bpftrace
-- 
