@@ -212,7 +212,7 @@ Table
 
 
 
-[[tags]]
+[[Tags]]
 
 ==highlight==
 
