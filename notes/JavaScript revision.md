@@ -1,4 +1,4 @@
-- DOM and Event Handling
+- #### DOM and Event Handling
 - #### **Three Array Methods: .map(), .filter(), .reduce()**
 - #### **Scoping**
 - #### **Prototypal Inheritance and Object Creation**
