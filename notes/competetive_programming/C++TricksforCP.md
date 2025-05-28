@@ -1,4 +1,4 @@
-# Some useful C++ tricks for beginners in Competitive Programming
+# Some useful C++ tricks in Competitive Programming
 
 1. Using the **auto** keyword to declare datatypes can save a lot of time during programming contests.
 

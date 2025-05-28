@@ -4,7 +4,7 @@
 **/*.bat
 **/*.class
 
-./Apica
+BooksLibrary
 
 .obsidian/
 .vscode/
